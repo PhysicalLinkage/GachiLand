@@ -28,7 +28,7 @@ public class AI : MonoBehaviour
         sponePosition = transform.position;
 
         Character.Speed.Value = 0.4f;
-        /*
+        
         this.UpdateAsObservable().Subscribe(_ =>
         {
             var targets = new List<Character>(4);
@@ -49,6 +49,6 @@ public class AI : MonoBehaviour
 
             Character.CommandAction(new Command(sponePosition));
         });
-        */
+        
     }
 }

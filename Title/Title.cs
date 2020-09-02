@@ -11,7 +11,7 @@ using Latte;
 
 public class Title : MonoBehaviour
 {
-    private void Awake()
+    private void Start()
     {
         Server.Receive(NetworkConfig.Host, NetworkConfig.Port);
 
