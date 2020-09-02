@@ -34,9 +34,9 @@ namespace Latte
 
         public static bool IsRunning { get; private set; } = false;
 
-        public static void Receive()
+        public static void Receive(string host, UInt16 port)
         {
-            ClientRUDPS.Start("13.231.248.183", 55488);
+            ClientRUDPS.Start(host, port);
 
             ClientRUDPS.ReceiveAsObservable.Subscribe(buffer =>
             {

@@ -13,7 +13,7 @@ public class Title : MonoBehaviour
 {
     private void Awake()
     {
-        Server.Receive();
+        Server.Receive(NetworkConfig.Host, NetworkConfig.Port);
 
         GetComponent<Button>().OnClickAsObservable()
             .Subscribe(_ =>
